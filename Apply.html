@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Admission Form</title>
+  <link rel="stylesheet" href="Apply.css">
+</head>
+<body>
+  <section class="contact-section">
+    <div class="container">
+      <!-- Left Content -->
+      <div class="left-content">
+        <h2>Get in Touch Online</h2>
+        <p>
+          We’re here to answer your questions and help you succeed. Whether you need
+          support, information, or a business inquiry — send us a message anytime, anywhere.
+        </p>
+        <div class="info-box">
+          <p>
+            💬 Available Mon–Fri: 9 AM – 6 PM <br>
+            📧 hello@yourcompany.com <br>
+            🌐 www.yourcompany.com
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Side (College Form) -->
+      <div class="form-box">
+        <h3>College Admission Form</h3>
+        <form id="collegeForm" novalidate>
+          
+          <!-- Personal Information -->
+          <div class="form-group">
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <small class="error"></small>
+          </div>
+
+          <div class="form-group">
+            <input type="date" name="dob" required>
+            <small class="error"></small>
+          </div>
+
+          <div class="form-group">
+            <select name="gender" required>
+              <option value="">-- Select Gender --</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+            <small class="error"></small>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Email Address" required>
+            <small class="error"></small>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" name="phone" placeholder="Phone Number (e.g. 03001234567)" pattern="[0-9]{11}" required>
+            <small class="error"></small>
+          </div>
+
+          <div class="form-group">
+            <textarea name="address" rows="2" placeholder="Address" required></textarea>
+            <small class="error"></small>
+          </div>
+
+          <!-- Academic Information -->
+          <div class="form-group">
+            <select name="qualification" required>
+              <option value="">-- Last Qualification --</option>
+              <option>Matric</option>
+              <option>Intermediate</option>
+              <option>O-Level</option>
+              <option>A-Level</option>
+              <option>Other</option>
+            </select>
+            <small class="error"></small>
+          </div>
+
+          <div class="form-group">
+            <input type="number" name="marks" placeholder="Marks / Percentage" min="0" max="100" required>
+            <small class="error"></small>
+          </div>
+
+          <!-- Course Selection -->
+          <div class="form-group">
+            <select name="program" required>
+              <option value="">-- Choose Program --</option>
+              <option>F A</option>
+              <option>Fsc (Pre Medical)</option>
+              <option>Fsc (Pre Engineering)</option>
+              <option>Ics</option>
+              <option>Icom</option>
+            </select>
+            <small class="error"></small>
+          </div>
+
+          <!-- File Uploads -->
+          <div class="form-group">
+            <label>Upload Photo</label>
+            <input type="file" name="photo" accept="image/*" required>
+            <small class="error"></small>
+          </div>
+
+          <div class="form-group">
+            <label>Upload Transcript</label>
+            <input type="file" name="transcript" accept=".pdf,.jpg,.png" required>
+            <small class="error"></small>
+          </div>
+
+          <!-- Agreement -->
+          <div class="form-group checkbox">
+            <input type="checkbox" name="agree" required>
+            <label>I confirm that the information provided is correct.</label>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit">Submit Application</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Toasts -->
+    <div id="toastContainer"></div>
+  </section>
+
+  <script src="Apply.js"></script>
+</body>
+</html>

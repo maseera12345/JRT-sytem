@@ -1,0 +1,212 @@
+/* General Section */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #f9fafb, #ffffff, #f3f4f6);
+  margin: 0;
+  padding: 0;
+}
+
+.contact-section {
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Left Content */
+.left-content h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.left-content p {
+  color: #4b5563;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.info-box {
+  background: #e0f2fe;
+  border-left: 4px solid #38bdf8;
+  max-width: 470px;
+  padding: 16px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Form Box */
+.form-box {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
+  border: 1px solid #f3f4f6;
+  margin-top: 10px;
+}
+
+.form-box h3 {
+  text-align: center;
+  color: #d97706;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input, Textarea, Select */
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #38bdf8;
+  outline: none;
+  box-shadow: 0 0 0 3px #bae6fd;
+}
+
+/* File Upload */
+.form-group input[type="file"] {
+  padding: 6px;
+  border: none;
+  font-size: 0.95rem;
+}
+
+/* Checkbox */
+.form-group.checkbox {
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-group.checkbox input {
+  width: auto;
+  margin-right: 8px;
+}
+
+.form-group.checkbox label {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+/* Errors */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+/* Button */
+.form-box button {
+  width: 100%;
+  background: #d97706;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background: #b45309;
+  transform: scale(1.02);
+}
+
+/* Toast */
+#toastContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.toast {
+  padding: 12px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  animation: fadeIn 0.5s;
+}
+
+.toast.success {
+  background: #dcfce7;
+  border: 1px solid #22c55e;
+  color: #166534;
+}
+
+.toast.error {
+  background: #fee2e2;
+  border: 1px solid #ef4444;
+  color: #991b1b;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+@media (max-width: 992px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .left-content h2 {
+    font-size: 2rem;
+  }
+
+  .form-box {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 10px;
+  }
+
+  .left-content h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .left-content p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .info-box {
+    max-width: 100%;
+  }
+
+  .form-box {
+    padding: 20px;
+  }
+
+  .form-box h3 {
+    font-size: 1.4rem;
+  }
+}
