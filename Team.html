@@ -5,14 +5,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>College Team Page</title>
-  <link rel="stylesheet" href="Team.css" />
+  <link rel="stylesheet" href="css/Team.css" />
   <!-- Font Awesome for social icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 </head>
 
 <body>
   <header>
-    <h1>Meet Our College Team</h1>
+    <div style="
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 95%; 
+    background-color:#252d70; 
+    color:white; 
+    display:flex; 
+    justify-content:space-between; 
+    align-items:center; 
+    padding:5px 50px; 
+    font-size:14px; 
+    z-index: 1001;">
+      <div>
+        📧 <a href="mailto:info.leadsgroup@leads.edu.pk"
+          style="color:white; text-decoration:none; margin-left:15px;">info.leadsgroup@leads.edu.pk</a>
+        📞 <a href="tel:+923011109630" style="color:white; text-decoration:none; margin-left:15px;">+92 301 1109630</a>
+      </div>
+      <a href="#"
+        style="background-color:orange; color:black; padding:5px 15px; border-radius:6px; font-weight:bold; text-decoration:none;">
+        💻 CMS Portal
+      </a>
+    </div>
+    <nav style="
+    position: fixed; 
+    top: 35px;   
+    left: 0; 
+    width: 98%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background: white; 
+    border-bottom: 1px solid #eee; 
+    padding: 0 20px; 
+    z-index: 1000;">
+      <div style="display:flex; align-items:center;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDTeDB05PafvXRIATgHsHrGfNF-g5IIksAdw&s"
+          alt="Leads Logo" style="height:100px; margin-right:10px;">
+        <h2 style="margin:0; color:#222;">JRT System</h2>
+      </div>
+      <ul style="display:flex; list-style:none; gap:25px; margin:0; padding:0;">
+        <li><a href="#" style="text-decoration:none; color:#222; font-weight:500;">Home</a></li>
+        <li><a href="#" style="text-decoration:none; color:#222; font-weight:500;">Academics</a></li>
+        <li><a href="#" style="text-decoration:none; color:#222; font-weight:500;">Admission</a></li>
+        <li><a href="#" style="text-decoration:none; color:#222; font-weight:500;">Team</a></li>
+        <li><a href="#" style="text-decoration:none; color:#222; font-weight:500;">Gallery</a></li>
+        <li><a href="#" style="text-decoration:none; color:#222; font-weight:500;">About Us</a></li>
+        <li><a href="#" style="text-decoration:none; color:#222; font-weight:500;">Contact Us</a></li>
+      </ul>
+      <div style="font-size:20px; cursor:pointer; color:#252d70;">🔍</div>
+    </nav>
+  </header>
+  <h1>Meet Our College Team</h1>
     <button id="darkModeBtn">
       <i class="fas fa-moon"></i>
       <i class="fas fa-sun"></i>
@@ -26,7 +78,6 @@
         <option value="management">Management</option>
       </select>
     </div>
-  </header>
 
   <!-- Management Section -->
   <section class="team-section">
@@ -236,8 +287,82 @@
       </div>
     </div>
   </section>
+  <footer style="background-color:#2d5997; color:white; padding:50px 80px 20px; margin-top:auto;">
+    <div style="display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:40px;">
+      <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDTeDB05PafvXRIATgHsHrGfNF-g5IIksAdw&s"
+          alt="Leads Logo" style="height:50px; margin-bottom:10px;">
+        <h2 style="font-size:20px; font-weight:bold; margin:0;">JRT System</h2>
+        <p style="margin:15px 0; line-height:1.6;">
+          We provide students with education and experiences to flourish, helping them
+          discover their passion and succeed in careers they love while daring to lead.
+        </p>
+        <div style="margin:15px 0;">
+          <div style="margin-bottom:8px;">📞 0301-1109630</div>
+          <div style="margin-bottom:8px;">📧 info.jrtsystem.com</div>
+        </div>
+        <div style="margin-top:15px;">
+          <a href="#"
+            style="display:inline-block; margin-right:10px; font-size:18px; color:white; text-decoration:none; border:1px solid #ffffff50; border-radius:50%; padding:8px;">
+            <i class="fab fa-facebook-f"></i></a>
+          <a href="#"
+            style="display:inline-block; margin-right:10px; font-size:18px; color:white; text-decoration:none; border:1px solid #ffffff50; border-radius:50%; padding:8px;">
+            <i class="fab fa-instagram"></i></a>
+          <a href="#"
+            style="display:inline-block; margin-right:10px; font-size:18px; color:white; text-decoration:none; border:1px solid #ffffff50; border-radius:50%; padding:8px;">
+            <i class="fab fa-linkedin-in"></i></a>
+          <a href="#"
+            style="display:inline-block; margin-right:10px; font-size:18px; color:white; text-decoration:none; border:1px solid #ffffff50; border-radius:50%; padding:8px;">
+            <i class="fab fa-tiktok"></i></a>
+          <a href="#"
+            style="display:inline-block; margin-right:10px; font-size:18px; color:white; text-decoration:none; border:1px solid #ffffff50; border-radius:50%; padding:8px;">
+            <i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-size:16px; margin-bottom:15px;">Useful Link</h3>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="margin-bottom:10px;"><a href="#"
+              style="color:white; text-decoration:none; font-size:14px;">Gallery</a></li>
+          <li style="margin-bottom:10px;"><a href="#"
+              style="color:white; text-decoration:none; font-size:14px;">Admissions</a></li>
+          <li style="margin-bottom:10px;"><a href="#" style="color:white; text-decoration:none; font-size:14px;">About
+              Us</a></li>
+          <li style="margin-bottom:10px;"><a href="#" style="color:white; text-decoration:none; font-size:14px;">Contact
+              Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:16px; margin-bottom:15px;">Admissions</h3>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="margin-bottom:10px;"><a href="#" style="color:white; text-decoration:none; font-size:14px;">Apply
+              To LEADS College</a></li>
+          <li style="margin-bottom:10px;"><a href="#" style="color:white; text-decoration:none; font-size:14px;">Apply
+              Online</a></li>
+          <li style="margin-bottom:10px;"><a href="#"
+              style="color:white; text-decoration:none; font-size:14px;">Courses</a></li>
+          <li style="margin-bottom:10px;"><a href="#" style="color:white; text-decoration:none; font-size:14px;">CMS</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:16px; margin-bottom:15px;">Franchise</h3>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="margin-bottom:10px;"><a href="#"
+              style="color:white; text-decoration:none; font-size:14px;">Franchise Form</a></li>
+          <li style="margin-bottom:10px;"><a href="#"
+              style="color:white; text-decoration:none; font-size:14px;">Application Process</a></li>
+          <li style="margin-bottom:10px;"><a href="#"
+              style="color:white; text-decoration:none; font-size:14px;">FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:30px; padding-top:15px; border-top:1px solid #ffffff40; font-size:14px;">
+      © 2025 JRT System. All Rights Reserved.
+    </div>
+  </footer>
 
-  <script src="Team.js"></script>
+  <script src="js/Team.js"></script>
 </body>
 
 </html>
