@@ -3,53 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Leads Group of Colleges</title>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css">
 </head>
-<body style="margin:0; font-family: Arial, sans-serif; background:#fff;">
-
-  <div style="width:100%; height:300px;">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27218.69624776267!2d74.2728947!3d31.4697282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905e7f8d2ef61%3A0xe32c96952e84f24e!2sLeads%20Group%20of%20Colleges!5e0!3m2!1sen!2s!4v1694955600000!5m2!1sen!2s" 
-      width="100%" 
-      height="100%" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy">
-    </iframe>
-  </div>
-
-  <div style="max-width:600px; margin:40px auto; background:#fff; padding:20px; box-shadow:0 0 10px rgba(0,0,0,0.1); border-radius:8px;">
-    <h2 style="text-align:center; margin-bottom:20px;">Contact Us</h2>
-
-    <form>
-      <label style="display:block; margin-bottom:5px; font-weight:bold;">Name <span style="color:red">*</span></label>
-      <input type="text" placeholder="Name" required 
-        style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;">
-      <label style="display:block; margin-bottom:5px; font-weight:bold;">Mobile Number <span style="color:red">*</span></label>
-      <input type="text" placeholder="Mobile Number" required 
-        style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;">
-      <label style="display:block; margin-bottom:5px; font-weight:bold;">Address</label>
-      <div style="display:flex; gap:10px; margin-bottom:15px;">
-        <input type="text" placeholder="City" required 
-          style="flex:1; padding:10px; border:1px solid #ccc; border-radius:5px;">
-        <input type="text" placeholder="Province" required 
-          style="flex:1; padding:10px; border:1px solid #ccc; border-radius:5px;">
+<body>
+  <section class="contact-section">
+    <h2>Contact Us</h2> 
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><strong>Phone:</strong> +92 300 3239815</p>
+        <p><strong>Email:</strong> info@collage.edu.pk</p>
+        <p><strong>Location:</strong> Vehari Road, Burewala, Pakistan</p>
       </div>
-      <label style="display:block; margin-bottom:5px; font-weight:bold;">Email</label>
-      <input type="email" placeholder="Email Address" 
-        style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;">
-      <label style="display:block; margin-bottom:5px; font-weight:bold;">Subject</label>
-      <input type="text" placeholder="Subject" 
-        style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;">
-      <label style="display:block; margin-bottom:5px; font-weight:bold;"> Message <span style="color:red">*</span></label>
-      <textarea placeholder="Your Message" required rows="4"
-        style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;"></textarea>
-      <button type="submit" 
-        style="background:#252d70; color:#fff; border:none; padding:12px 20px; border-radius:5px; cursor:pointer; width:100%; font-size:16px;">
-        Submit Form
-      </button>
-    </form>
-  </div>
+      <div class="contact-form">
+        <form>
+          <label>Your Name</label>
+          <input type="text" placeholder="Full name" required>
 
+          <label>Email</label>
+          <input type="email" placeholder="you@example.com" required>
+
+          <label>Phone</label>
+          <input type="text" placeholder="03xx-xxxxxxx" required>
+
+          <label>Message</label>
+          <textarea placeholder="How can we help?"></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div class="contact-map">
+        <h3>Location</h3>
+        <p>Find us on the map below.</p>
+        <iframe 
+          src="https://www.openstreetmap.org/export/embed.html?bbox=72.65%2C30.13%2C72.70%2C30.18&layer=mapnik&marker=30.1588%2C72.6797" 
+          style="border:0;" 
+          allowfullscreen 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
