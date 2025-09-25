@@ -3,77 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - jrt System</title>
+  <title>About Us </title>
   <link rel="stylesheet" href="./css/about.css">
+  <title>About Us - Lead College</title>
 </head>
 <body>
   <div id="navbar"></div>
   <header>
-    <h1>About Jrt System</h1>
+    <h1>About JRT system</h1>
     <p>Shaping Futures with Knowledge, Innovation & Excellence</p>
   </header>
-  <div class="container"> 
+  <div class="container">
     <section>
-      <h2>About jrt System</h2>
+      <h2>About Jrt System</h2>
       <div class="about-college">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCJ5PQje7BJABO1x43OtbNVeZiRQ4r_bcZrA&s" alt="College Campus">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCJ5PQje7BJABO1x43OtbNVeZiRQ4r_bcZrA&s"
+          alt="College Campus">
         <p>
-          Lead College is a center of academic excellence committed to providing world-class education. 
-          We focus on empowering students with knowledge, leadership skills, and opportunities to excel 
-          in their chosen fields. Our faculty members are dedicated professionals who combine 
+          Lead College is a center of academic excellence committed to providing world-class education.
+          We focus on empowering students with knowledge, leadership skills, and opportunities to excel
+          in their chosen fields. Our faculty members are dedicated professionals who combine
           innovative teaching methods with hands-on experience to prepare students for global challenges.
         </p>
       </div>
     </section>
 
-   
+
     <section>
-      <h2>Why Choose jrt System?</h2>
+      <h2>Why Choose Lead College?</h2>
       <div class="cards">
         <div class="card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpQAahDZ4vN8p5UfXWgI31ouN-VWBAeqE1SQ&s" alt="Modern Facilities">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpQAahDZ4vN8p5UfXWgI31ouN-VWBAeqE1SQ&s"
+            alt="Modern Facilities">
           <h3>Modern Facilities</h3>
           <p>
-            Our campus is equipped with modern labs, digital classrooms, and libraries that create 
+            Our campus is equipped with modern labs, digital classrooms, and libraries that create
             the perfect environment for learning and innovation.
           </p>
         </div>
         <div class="card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxXeJifv-Ch79qK1m2N_xm6OFSc7cO-tu75g&s" alt="Experienced Faculty">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxXeJifv-Ch79qK1m2N_xm6OFSc7cO-tu75g&s"
+            alt="Experienced Faculty">
           <h3>Experienced Faculty</h3>
           <p>
-            Learn from highly qualified faculty members who bring both academic expertise and real-world 
+            Learn from highly qualified faculty members who bring both academic expertise and real-world
             experience to the classroom.
           </p>
         </div>
         <div class="card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUCBJh5yfwS5e7ArEHK6mVX2tOlpr8DxPLJw&s" alt="Global Opportunities">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUCBJh5yfwS5e7ArEHK6mVX2tOlpr8DxPLJw&s"
+            alt="Global Opportunities">
           <h3>Global Opportunities</h3>
           <p>
-            We provide international exchange programs, scholarships, and opportunities for 
+            We provide international exchange programs, scholarships, and opportunities for
             collaboration with leading institutions worldwide.
           </p>
         </div>
       </div>
     </section>
 
-  
     <section>
       <h2>Articulation Programs</h2>
       <div class="cards">
         <div class="card">
-          <img src="https://www.applyboard.com/_next/image?url=https%3A%2F%2Fphotos.applyboard.com%2Fschool_photos%2F000%2F019%2F189%2Fphotos%2Foptimized%2FUniversity_of_York_International-College-PiazzaBuilding-May2023.webp%3F1683033482&w=3840&q=75" alt="Pathway to Universities">
+          <img
+            src="https://www.applyboard.com/_next/image?url=https%3A%2F%2Fphotos.applyboard.com%2Fschool_photos%2F000%2F019%2F189%2Fphotos%2Foptimized%2FUniversity_of_York_International-College-PiazzaBuilding-May2023.webp%3F1683033482&w=3840&q=75"
+            alt="Pathway to Universities">
           <h3>Pathway to Top Universities</h3>
           <p>
-            Our articulation programs allow students to start their journey at Lead College and continue 
+            Our articulation programs allow students to start their journey at Lead College and continue
             their degrees at prestigious international universities.
           </p>
         </div>
         <div class="card">
-          <img src="https://www.automation.com/getmedia/3002e72e-d0c3-4046-aac7-6be5f555221b/EUA568---Image" alt="Industry Partnerships">
+          <img src="https://www.automation.com/getmedia/3002e72e-d0c3-4046-aac7-6be5f555221b/EUA568---Image"
+            alt="Industry Partnerships">
           <h3>Industry Partnerships</h3>
           <p>
-            Collaborations with industries provide internships, hands-on training, and career development 
+            Collaborations with industries provide internships, hands-on training, and career development
             opportunities for our students.
           </p>
         </div>
@@ -83,24 +90,24 @@
   <div id="footer"></div>
   <script>
     fetch("Navbar.html")
-  .then(response => {
-    if (!response.ok) throw new Error("Navbar not found!");
-    return response.text();
-  })
-  .then(data => {
-    document.getElementById("navbar").innerHTML = data;
-    console.log("Navbar loaded successfully!");
-  })
-  .catch(err => console.error("Error loading navbar:", err));
-  fetch("Footer.html")
-  .then(response => {
-    if (!response.ok) throw new Error("Footer not found!");
-    return response.text();
-  })
-  .then(data => {
-    document.getElementById("footer").innerHTML = data;
-  })
-  .catch(err => console.error("Error loading footer:", err));
+      .then(response => {
+        if (!response.ok) throw new Error("Navbar not found!");
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+        console.log("Navbar loaded successfully!");
+      })
+      .catch(err => console.error("Error loading navbar:", err));
+    fetch("Footer.html")
+      .then(response => {
+        if (!response.ok) throw new Error("Footer not found!");
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      })
+      .catch(err => console.error("Error loading footer:", err));
   </script>
 </body>
 </html>
