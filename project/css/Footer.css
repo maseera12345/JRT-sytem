@@ -4,10 +4,11 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    color:#334155;
   }
   
   .footer {
-    background-color: #2d5997;
+    background-color: #0F172A;
     color: white;
     padding: 50px 80px 20px;
     margin-top: auto;
@@ -51,7 +52,7 @@ body {
     border: 1px solid #ffffff50;
     border-radius: 50%;
     padding: 8px;
-    transition: background 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
   }
   
   .footer-social a:hover {

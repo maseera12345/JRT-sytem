@@ -5,17 +5,8 @@ body {
   padding: 0;
   color: #333;
 }
-.course-header {
-  padding: 40px 60px;
-  background: #002147
-}
-.course-header h1 {
-  font-size: 40px; 
-  margin: 0 0 15px 0;
-  color: #002147;
-  color: #f4f6f9;
-  text-align: center;
-}
+
+
 .courses-section {
   max-width: 1200px;
   margin: 50px auto;

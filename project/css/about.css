@@ -16,6 +16,7 @@ header {
   color: #fff;
   text-align: center;
   padding: 40px 20px;
+  margin-top: 60px;           
 }
 
 header h1 {
@@ -28,12 +29,14 @@ header p {
   opacity: 0.9;
 }
 
+/* ===== Main Container ===== */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 40px auto;
 }
 
+/* ===== Sections ===== */
 section {
   margin-bottom: 60px;
 }
@@ -46,6 +49,7 @@ section h2 {
   padding-left: 10px;
 }
 
+/* ===== About College Section ===== */
 .about-college {
   display: flex;
   align-items: center;
@@ -65,6 +69,7 @@ section h2 {
   font-size: 1.1rem;
 }
 
+/* ===== Cards Section ===== */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -101,12 +106,4 @@ section h2 {
 .card p {
   font-size: 0.95rem;
   color: #555;
-}
-
-footer {
-  background: #003366;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
 }

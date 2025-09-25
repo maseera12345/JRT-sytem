@@ -18,7 +18,9 @@ body {
   gap: 40px;
   align-items: flex-start;
 }
-
+.left-content{
+  margin-top: 10px;
+}
 /* Left Content */
 .left-content h2 {
   font-size: 2.5rem;
@@ -48,7 +50,7 @@ body {
   border-radius: 16px;
   box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
   border: 1px solid #f3f4f6;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 .form-box h3 {
@@ -120,18 +122,20 @@ body {
 /* Button */
 .form-box button {
   width: 100%;
-  background: #d97706;
+  background: #10B981;
   color: white;
-  font-weight: bold;
+  font-weight: 600;
   padding: 12px;
+  font-size: 16px;
   border: none;
   border-radius: 8px;
   transition: 0.3s;
   cursor: pointer;
+  transition: background-color 0.3 ease;
 }
 
 .form-box button:hover {
-  background: #b45309;
+  background-color: #059669;
   transform: scale(1.02);
 }
 
